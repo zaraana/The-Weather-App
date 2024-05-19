@@ -10,6 +10,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 async function getWeatherData(city){
     const response = await fetch( apiUrl + city + `&appid=${apiKey}`);
     const data = await response.json();
+    const forecastData = await getForecastData(city);
 
     console.log(data);
 
@@ -80,10 +81,12 @@ async function getWeatherData(city){
 
 
     // add forecast 5 cards 
-    const getForecast = await fetch(forecastUrl + city + `&appid=${apiKey}`);
-    const forecastData =  await getForecast.json();
-    
-    console.log(forecastData);
+    async function getForecastData(city) {
+        const response = await fetch(forecastUrl + city + `&appid=${apiKey}`);
+        const data = await response.json();
+        return data;
+        }
+        
 
     const dateString = data.dt;
     console.log(dateString);
@@ -128,11 +131,6 @@ async function getWeatherData(city){
 
         // create the forecast card HTML using the forecast data
         // const weatherIconUrl = getWeatherIcon(forecast.weather[0].main);
-
-
-
-
-
         
         let icon = '';
         let iconWeather = forecast.weather[0].main;
@@ -197,12 +195,6 @@ const monthNum = day.getMonth() + 1;
         const searchValue = inputSearch.value;
         getWeatherData(searchValue);
     });
-
-
-
-
-
-// }
 
 
 btnSearch.addEventListener("click", function() {
