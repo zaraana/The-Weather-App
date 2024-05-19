@@ -5,7 +5,7 @@
 
 body {
   min-height: 100vh;
-  background-image: url("/Assets/images/bg.jpg");
+  background-image: url("Assets/images/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,6 +25,9 @@ nav .logo {
   height: 38px;
   margin-left: 30px;
   margin-right: 260px;
+}
+nav i {
+  margin-left: 50px;
 }
 
 header {
