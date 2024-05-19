@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <script defer src="/Assets/js/app.js"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-*" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+            <img class="logo" src="Assets/images/logo.png" alt="logo">
+            <i class="fas fa-ellipsis-v"></i>
+        <div id="search-history"></div>
+    </nav>
+    <header>
+        <input type="text" id="cityInput" placeholder="Enter a city name">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </header>
+    <main>
+        <div class="time-showcase" style="display:none">
+            <h4 id="date">Date:</h4>
+            <section>
+                <img id="dayNight-icon" alt="dayNight-icon">
+                <h4 id="time"></h4>
+            </section>
+        </div>
+        </section>
+        <div class="weatherContainer" style="display:none">
+            <div class="humidity">
+                <section>
+                    <img class="icons" src="Assets/images/humidity.png" alt="humidity">
+                    <h5>ʜᴜᴍɪᴅɪᴛʏ</h5>
+                    <p id="humidity">
+                        0%
+                    </p>
+                </section>
+            </div>
+            <div class="weather">
+                <img id="weather-icon">
+                <h1 id="city">Seoul</h1>
+                <h2 id="temperature">°C</h2>
+            </div>
+            <div class="wind">
+                <section>
+                    <img src="Assets/images/windy.png" alt="wind" class="icons">
+                </section>
+                <h5>ᴡɪɴᴅ ꜱᴘᴇᴇᴅ</h5>
+                <p id="wind">
+                    11km/hr;
+                </p>
+            </div>
+        </div>
+        <div class="forecast"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
