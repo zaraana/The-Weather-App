@@ -4,27 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/style.css">
-    <script defer src="Assets/js/app.js"></script>
-    <title>Weather App</title>
+    <!-- <script defer src="Assets/components/app.js"></script> -->
+<script defer type="module"  src="Assets/components/display.js" ></script>
+<script defer  type="module"  src="Assets/components/externalApis.js"></script>
+<script defer type="module"  src="Assets/components/eventListeners.js"></script>
+<script defer type="module"  src="Assets/components/main.js"></script>
+<script defer type="module"  src="Assets/components/weather.js"></script>
+
+    <title>ᴡᴇᴀᴛʜᴇʀ ᴀᴘᴘ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-*" crossorigin="anonymous" />
 </head>
 <body>
     <nav>
-            <img class="logo" src="Assets/images/logo.png" alt="logo">
-            <i class="fas fa-ellipsis-v"></i>
-        <div id="search-history"></div>
-    </nav>
+        <section>
+            <img class="logo" src="Assets/images/logolight.png" alt="logo">
+            <h6>My Weαтнer App</h6>
+        </section>
+        <section>
+            <i id="menu-icon" class="fas fa-ellipsis-v"></i>
+                <div id="sidebar">
+                    <div id="sidebar-header">
+                        <button id="sidebar-close">&times;</button>
+                        <h2>Searched Cities<i class="fas fa-history"></i></h2>
+                    </div>
+                    <div id="sidebar-content">
+                    <div id="cities-container">
+                        <div class="city-card"></div>
+                        <div class="city-card"></div>
+                    </div>
+                    </div>
+                    </div>
+        </section>
+        </nav>
     <header>
         <input type="text" id="cityInput" placeholder="Enter a city name">
-        <button type="submit"><i class="fas fa-search"></i></button>
+        <button id="search-btn" type="submit"><i class="fas fa-search"></i></button>
     </header>
     <main>
+        <div>
         <div class="time-showcase" style="display:none">
-            <h4 id="date">Date:</h4>
-            <section>
                 <img id="dayNight-icon" alt="dayNight-icon">
                 <h4 id="time"></h4>
-            </section>
         </div>
         </section>
         <div class="weatherContainer" style="display:none">
@@ -53,9 +73,21 @@
             </div>
         </div>
         <div class="forecast"></div>
+    </div>
+    <div>
+        <div class="city-img-desc-container"  style="display:none">
+            <div id="city-info">
+                <img id="city-image" src="" alt="City Image">
+                <p id="city-description"></p>
+            </div>
+        </div>
+    </div>
     </main>
     <footer>
-
+        <div class="footer-bottom">
+            &copy; 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚍 𝚋𝚢 𝚉𝚊𝚑𝚛𝚊 𝙰𝚗𝚊  ザラ カーマ
+            </div>
     </footer>
+
 </body>
 </html>

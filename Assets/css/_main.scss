@@ -1,0 +1,168 @@
+main{
+    min-height: 100vh;
+    .time-showcase{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(55px);
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+
+        #date{
+            margin-right: 80px;
+        }
+        img{
+            margin-right: 10px;
+        }
+
+        section{
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+            #time{
+                justify-content: center;
+            }
+        }
+    }
+
+    .weatherContainer{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(55px);
+        
+
+        .humidity{
+            text-align: center;
+            margin-top: 149px;
+            img{
+                width: 50px;
+                height:50px;
+                justify-items: center;
+            }
+        }
+            .weather{
+                text-align: center;
+                img{
+                    margin-top: 20px;
+                    width: 150px;
+                    height:140px;
+                }
+                h1{
+
+                }
+
+                h2{
+
+                }
+            }
+
+            .wind{
+                text-align: center;
+                margin-top: 150px;
+                img{
+                    width: 48px;
+                    height:48px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+            }
+        
+    }
+    .forecast{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        .forecast-item{
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(55px);
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 19px;
+            text-transform: capitalize;
+            gap: 10px;
+            width: 110px;
+            height: 150px;
+            text-align: center;
+
+            .date{
+                font-size: larger;
+                text-decoration: underline;
+            }
+
+
+            .description{
+                font-size: 15px;
+            }
+            
+            .icon{
+                .forecast-icon{
+                    width: 50px;
+                    height:50px;
+                    justify-items: center;
+                }
+            }
+        }
+    }
+
+    
+.city-img-desc-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+#city-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    .city-image{
+        margin-top: 20px;
+        padding: 20px;
+        width: 50%  }
+        p{
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+            font-family: "Montserrat";
+        }
+}
+}
+}
