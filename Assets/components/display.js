@@ -8,15 +8,11 @@ export function displayWeatherData(data) {
     setWeatherIcon(data.weather[0].main);
 }
 
-// export function displayCityInfo(imageUrl, description) {
-//     document.querySelector("#city-image").src = imageUrl;
-//     document.querySelector("#city-description").innerHTML = description;
-// }
 export function displayCityInfo(imageUrl, description) {
     const cityImage = document.querySelector("#city-image");
     if (cityImage) {
         cityImage.src = imageUrl;
-        cityImage.classList.add('city-image'); // Add this line
+        cityImage.classList.add('city-image'); 
     }
 
     const cityDescription = document.querySelector("#city-description");
@@ -34,7 +30,7 @@ export function displayForecastCards(forecastData) {
         });
 
         if (day === nextFiveDays[4] && !forecast) {
-            return '<div class="forecast-item">No forecast data available</div>';
+            return '<div class="forecast-item">"No forecast data available"</div>';
         }
 
         if (!forecast) {
@@ -116,8 +112,11 @@ export function changeDayNightIcon(data) {
         document.body.style.color = "white";
         document.querySelector('i').style.color = "white";
         document.querySelector("h6").style.color = "white";
-        document.querySelector(".logo").src = "Assets/images/logodark.png";
+        document.querySelector(".logo").src = "Assets/images/logoweatherappdark.png";
         document.querySelector("h2").style.color = "white";
+        document.querySelector(".city-card").style.color = "white";
+
+
     }
 }
 

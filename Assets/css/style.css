@@ -28,6 +28,7 @@ nav section {
   align-items: center;
 }
 nav h6 {
+  margin-top: 15px;
   margin-left: 5px;
   margin-right: 100px;
   color: black;
@@ -95,7 +96,6 @@ nav #sidebar #sidebar-content .city-card {
   padding: 8px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: black;
   display: block;
   transition: 0.3s;
   text-transform: capitalize;

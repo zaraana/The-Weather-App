@@ -58,7 +58,6 @@ export function setupEventListeners() {
         const searchValue = inputSearch.value;
         
         try {
-            // Assuming getWeatherData is an asynchronous function that fetches data
             await getWeatherData(searchValue);
     
             cityImgDescContainer.style.display = 'block';
