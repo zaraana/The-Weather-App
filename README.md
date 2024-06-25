@@ -14,11 +14,8 @@
 # 𝙼𝚒𝚜𝚜𝚒𝚘𝚗
 𝚃𝚑𝚒𝚜 𝚊𝚙𝚙 𝚠𝚊𝚜 𝚌𝚛𝚎𝚊𝚝𝚎𝚍 𝚝𝚘 𝚑𝚎𝚕𝚙 𝚔𝚎𝚎𝚙 𝚢𝚘𝚞𝚛 𝚏𝚊𝚖𝚒𝚕𝚢 𝚊𝚗𝚍 𝚏𝚛𝚒𝚎𝚗𝚍𝚜 𝚒𝚗𝚏𝚘𝚛𝚖𝚎𝚍 𝚊𝚋𝚘𝚞𝚝 𝚝𝚑𝚎 𝚠𝚎𝚊𝚝𝚑𝚎𝚛 𝚠𝚑𝚎𝚛𝚎 𝚢𝚘𝚞 𝚕𝚒𝚟𝚎, 𝚏𝚛𝚎𝚎𝚒𝚗𝚐 𝚞𝚙 𝚢𝚘𝚞𝚛 𝚝𝚒𝚖𝚎 𝚝𝚘 𝚍𝚒𝚜𝚌𝚞𝚜𝚜 𝚖𝚘𝚛𝚎 𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝𝚒𝚗𝚐 𝚝𝚘𝚙𝚒𝚌𝚜 𝚍𝚞𝚛𝚒𝚗𝚐 𝚢𝚘𝚞𝚛 𝟷𝟶-𝚖𝚘𝚗𝚝𝚑 𝚠𝚘𝚛𝚔 𝚖𝚒𝚜𝚜𝚒𝚘𝚗 𝚊𝚋𝚛𝚘𝚊𝚍.
 
- <div align="center">
-   
-   # 𝙵𝚎𝚊𝚝𝚞𝚛𝚎𝚜
-
-   </div>
+    
+# 𝙵𝚎𝚊𝚝𝚞𝚛𝚎𝚜
 
    
 # 𝙼𝚞𝚜𝚝-𝙷𝚊𝚟𝚎𝚜
@@ -44,6 +41,12 @@
 - ![HTML](https://img.shields.io/badge/HTML-5-red)
 - ![CSS](https://img.shields.io/badge/CSS-3-blue)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
+<br>
+
+## 𝙼𝚢 𝚊𝚙𝚙 𝚒𝚜 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚒𝚟𝚎! 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚌𝚑𝚎𝚌𝚔 𝚒𝚝 𝚘𝚞𝚝 𝚞𝚜𝚒𝚗𝚐 𝚝𝚑𝚒𝚜 𝚏𝚞𝚗 𝚎𝚡𝚝𝚎𝚗𝚜𝚒𝚘𝚗! <br>[ᴍᴏʙɪʟᴇ sɪᴍᴜʟᴀᴛᴏʀ 📱](https://chromewebstore.google.com/detail/simulateur-t%C3%A9l%C3%A9phone-mobi/ckejmhbmlajgoklhgbapkiccekfoccmk?pli=1)
+
+
 
 <br>
 <div align="center">
