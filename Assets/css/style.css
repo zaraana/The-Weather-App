@@ -145,6 +145,28 @@ header button:hover {
 main {
   min-height: 100vh;
 }
+main .errorContainer {
+  position: fixed;
+  top: 50%; /* Position 50% from the top */
+  left: 50%; /* Position 50% from the left */
+  transform: translate(-50%, -50%); /* Center the container */
+  text-align: center; /* Center text horizontally */
+  background-color: transparent;
+  padding: 50px; /* Add padding to the container */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(55px);
+  max-height: 30vh;
+  max-width: 40vh;
+}
+main .errorContainer h2 {
+  color: black; /* Example text color */
+  font-size: 24px; /* Example font size */
+  margin: 0; /* Remove default margin */
+}
 main .time-showcase {
   flex-grow: 1;
   display: flex;

@@ -52,21 +52,26 @@ export function setupEventListeners() {
         sidebar.classList.remove("show");
     });
 
+
     btnSearch.addEventListener("click", async function(event) {
         event.preventDefault();
         const searchValue = inputSearch.value;
-        await getWeatherData(searchValue);
-
-        cityImgDescContainer.style.display = 'block';
-    });
-
-    document.querySelectorAll('.delete-city').forEach(icon => {
-        icon.addEventListener('click', () => {
-            const city = icon.parentElement.querySelector(".city-name").textContent;
-            const citiesArr = localStorage.getItem("searchedCities").split(",");
-            const newCitiesArr = citiesArr.filter((c) => c !== city);
-            localStorage.setItem("searchedCities", newCitiesArr.join(","));
-            icon.parentElement.remove();
-        });
+        
+        try {
+            // Assuming getWeatherData is an asynchronous function that fetches data
+            await getWeatherData(searchValue);
+    
+            cityImgDescContainer.style.display = 'block';
+            
+            errorContainer.style.display = 'none';
+            errorMessage.textContent = '';
+    
+        } catch (error) {
+            errorMessage.textContent = `City "${searchValue}" not found!`;
+            errorContainer.style.display = 'block';
+    
+            // Hide city information container
+            cityImgDescContainer.style.display = 'none';
+        }
     });
 }
