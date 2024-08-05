@@ -33,6 +33,7 @@ export function setupEventListeners() {
                         const cityName = event.target.parentElement.parentElement.querySelector(".city-name").textContent;
                         const citiesArr = localStorage.getItem("searchedCities").split(",");
                         const newCitiesArr = citiesArr.filter((c) => c !== cityName);
+                        //cerca a ke serve filter 
                         localStorage.setItem("searchedCities", newCitiesArr.join(","));
                         event.target.parentElement.parentElement.remove();
                     });

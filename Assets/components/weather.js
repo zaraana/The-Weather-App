@@ -48,3 +48,8 @@ export async function getWeatherData(city, fromSidebar = false) {
 
     changeDayNightIcon(data);
 }
+
+//vite.js
+//vercel 
+//env
+//security for keys so that wont be use

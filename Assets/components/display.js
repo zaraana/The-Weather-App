@@ -4,7 +4,7 @@ export function displayWeatherData(data) {
     document.querySelector("#humidity").innerHTML = data.main.humidity + "%";
     document.querySelector("#wind").innerHTML = data.wind.speed + "km/h";
     document.querySelector("#time").innerHTML = "Time: " + getTime(data);
-
+//interpolation rather than concatenation and inenrtext rather than innerhtml guess why??
     setWeatherIcon(data.weather[0].main);
 }
 
@@ -36,6 +36,7 @@ export function displayForecastCards(forecastData) {
         if (!forecast) {
             return '';
         }
+        // u can use throw new error/ try catch so that understand why error
 
         let icon = '';
         let iconWeather = forecast.weather[0].main;
@@ -62,6 +63,7 @@ export function displayForecastCards(forecastData) {
                 icon = 'Assets/images/clouds.png';
                 break;
         }
+        // better to use object easier if needed to recall or modify 
 
         const dayOfWeek = day.toLocaleDateString(undefined, { weekday: 'short' });
         const monthNum = day.getMonth() + 1;
@@ -81,6 +83,8 @@ export function displayForecastCards(forecastData) {
     });
 
     document.querySelector(".forecast").innerHTML = forecastCards.join("");
+//verifica ke re!
+
 }
 
 function getNext5DaysForecast() {
@@ -112,14 +116,14 @@ export function changeDayNightIcon(data) {
         document.body.style.color = "white";
         document.querySelector('i').style.color = "white";
         document.querySelector("h6").style.color = "white";
-        document.querySelector(".logo").src = "Assets/images/logoweatherappdark.png";
+        // document.querySelector(".logo").src = "Assets/images/logoweatherappdark.png";
         document.querySelector("h2").style.color = "white";
         document.querySelector(".city-card").style.color = "white";
 
 
     }
 }
-
+//object!
 function setWeatherIcon(weather) {
     let icon = '';
     switch (weather) {

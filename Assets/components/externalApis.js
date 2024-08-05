@@ -23,6 +23,7 @@ export async function getCityImage(city) {
 }
 
 export async function getCityDescription(city) {
+    //try catch?better arrow function export const getDescription (city)
     const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${city}`);
     const data = await response.json();
     return data.extract || 'No description available';
