@@ -1,11 +1,10 @@
-<img align="left" width="30%" src="Assets/images/weather-app.png">    
+<img align="left" width="15%" src="Assets/images/weather-app.png">    
 <br>
 <br>
 <br>
-<br>
+
 
 #  ᗰY ᗯEᗩTᕼEᖇ ᗩᑭᑭ      
-
 
  # 𝙾𝚟𝚎𝚛𝚟𝚒𝚎𝚠
   
