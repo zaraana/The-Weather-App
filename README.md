@@ -1,3 +1,4 @@
+<br>
 <img align="left" width="15%" src="Assets/images/weather-app.png">    
 <br>
 <br>
