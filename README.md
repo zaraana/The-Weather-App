@@ -1,4 +1,4 @@
-<img align="left" width="20%" src="Assets/images/logoreadme.png">    
+<img align="left" width="30%" src="Assets/images/weather-app.png">    
 <br>
 <br>
 <br>
